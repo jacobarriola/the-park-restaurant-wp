@@ -50,7 +50,6 @@
 
 			<p class="newsletter-text">Sign up for our weekly newsletter to receive a $20 birthday gift certificate, information about weekend specials and upcoming menus, plus exclusive invitations to The Park Restaurant events.</p>
 		</div>
-	</div><!--end container-->
 </footer>
 
 <?php wp_footer(); ?>

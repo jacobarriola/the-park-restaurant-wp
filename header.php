@@ -21,22 +21,10 @@
 
 <body <?php body_class(); ?>>
 
-	<div class="container clearfix">
-
-			<div class="grid_12">
-
-				<div class="grid_4 top-navigation">
-
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1>The Park Restaurant</h1></a>
-
-				</div>
-
-				<div class="grid_8 omega nav">
-
-
-					<?php wp_nav_menu(array('menu' => 'Main Nav Menu')); ?>
-
-				</div>
-
-			</div>
+<nav class="global-navigation">
+	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-holder"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo.png" alt="The Park Restaurant of Echo Park logo" title="The Park Restaurant" class="logo" /></a>
+	<section class="nav">
+		<?php wp_nav_menu(array('menu' => 'Main Nav Menu')); ?>
+	</section>
+</nav>
 
