@@ -1,0 +1,13 @@
+// file purpose is to override default neat grid settings.  Neat recommends to create this file for upgrade safe purposes
+
+@import "neat/neat-helpers"; 
+
+// Change the grid settings
+$column: 60px;
+$gutter: 20px;
+$grid-columns: 12;
+$max-width: em(940);
+
+// Defining breakpoints
+$medium: new-breakpoint(max-width 768px 8);
+$small: new-breakpoint(max-width 480px 4);
