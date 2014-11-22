@@ -1,0 +1,62 @@
+footer {
+	background: #74c058; 
+	margin-top: 107px; 
+	padding: 42px 0; 
+	color: #444444; 
+	font-size: 12px;
+	font-weight: 600;
+	.wrapper {
+		padding: 1em;
+	}
+}
+
+footer span a, footer span {
+	color: #ffffff;
+}
+
+.social-icons {
+	margin-top: 20px;
+}
+
+.facebook-icon {
+	margin-right: 20px;
+}
+
+.biz-hours span {
+	font-weight: 400;
+}
+
+footer h3 {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+footer .email {
+	width: 135px;
+	height: 33px;
+	float: left;
+	padding: 0 5px;
+	font-size: 11px;
+	box-shadow: 0 0 0 0 #ffffff;
+	border-radius: 6px 0 0 6px;
+}
+
+
+footer .button {
+	width: 74px;
+	padding: 4px 5px;
+	font-size: 11px;
+	height: 34px;
+	border-radius: 0 6px 6px 0;
+}
+
+.newsletter {
+	font-weight: 400;
+}
+
+.newsletter-text {
+	margin-top: 20px;
+	font-size: 11px;
+}

@@ -1,0 +1,245 @@
+.tag-line {
+	font-family: 'Enriqueta', sans; 
+	font-size: 34px; 
+	font-weight: normal; 
+	list-style: none; 
+	text-align: center;
+	margin-left: 0;
+	margin-top: 0;
+	background: #74c058; 
+	color: #ffffff; 
+	@include pad(.5em);
+	@include clearfix;
+	@include media($medium-screen-up) {
+/*		@include span-columns(4);*/
+	}
+	@include media($large-screen-up) {
+		@include span-columns(4 of 5);
+		padding: 15px 25px 15px 25px; 
+/*		margin-left: -.833333333em; /* 30px/36px */
+		margin-top: .416666667em; /* 15px/36px */
+		}
+	}
+
+.tag-line p {
+	margin: 12px 0;
+}
+
+.top-left-headline {
+	display: none;
+	background: transparent;
+	@include clearfix;
+	@include media($large-screen-up) {
+		@include span-columns(5);
+		background-color: #ffffff;;
+	}
+}
+
+.featured-bpost {
+	@include pad(1em);
+	float: left;
+/*	@include media($medium-screen-up){
+		@include span-columns(4);
+	}
+	@include media($large-screen-up){
+		@include span-columns(6);
+	}*/
+}
+
+.featured-bpost span {
+	font-size: 14px; 
+	line-height: 1.4;
+}
+
+.featured-bpost h3 {
+	font-size: 20px; 
+	margin: 0;
+}
+
+.featured-bpost h3 a {
+	color: #222;
+}
+
+.featured-bpost-date {
+	color: #59afcf; 
+	font-size: 16px; 
+/*	margin-top: 30px;*/
+}
+
+.featured-bpost-byline, 
+.featured-bpost-more {
+	font-size: 12px; 
+	margin:0;
+}
+
+.slider {
+	@include media($large-screen-up){
+		@include span-columns(7);
+	}
+}
+
+/*  ==================================
+    Secondary Navigation (menus, book)
+	================================== */
+
+.sec-nav-bkg {
+	background: #59afcf;
+}
+
+.sec-nav {
+	font-size: 18px; 
+	list-style: none; 
+	text-transform: uppercase; 
+	margin-top: 80px; 
+	margin-bottom: 80px;
+
+}
+
+.sec-nav ul {
+	list-style: none;
+}
+
+
+.menus {
+/*	background: #59afcf;
+	height: 57px;*/
+}
+
+.menus a {
+	color: #ffffff;
+	}
+
+.menus li {
+	padding: 1em;
+	margin-bottom: 1px;
+		background-color: #59afcf;
+	@include media($medium-screen-up) {
+		float: left; 
+		width: 180px;
+		}
+	}
+
+.menus ul {
+
+	margin: 0;
+
+	text-align: center;
+
+		@include media($medium-screen-up) {
+			height: 35px;
+			padding-top: 10px;
+			margin: 5px;
+			border-top: 1px dotted #666666;
+			border-bottom: 1px dotted #666666;
+		}
+}
+
+
+.book-table {
+
+	color: #ffffff;
+	ul {
+
+		text-align: center;
+		margin: 0;
+		@include clearfix;
+		@include media($medium-screen-up) {
+			padding-top: 10px;
+			margin: 5px;
+			height: 35px;	
+			border-top: 1px dotted #666666;
+			border-bottom: 1px dotted #666666;		
+		}
+	}
+}
+
+.book-table li {
+	float: left; 
+	width: 100%;
+	padding: 1em;
+	background: #ef7233; 
+}
+
+.book-table a {
+	color: #ffffff;
+}
+.josh-quote {
+	padding: 1em;
+	@include clearfix;
+	margin-bottom: 2.5em;
+}
+.josh-wrapper {
+	text-align: center;
+	@include media($medium-screen-up){
+		@include span-columns(2);
+	}
+}
+.josh-image {
+	max-width: 100%;
+}
+.main-quote {
+	line-height: 1.4; 
+	font-size: 18px; 
+	margin: 0;
+	@include media($medium-screen-up){
+		@include span-columns(4);
+		@include omega();
+	}
+}
+.weekly-calendar,
+.tuesday-calendar,
+.weekend-special-calendar {
+	margin-bottom: 2.5em;
+}
+
+.week-calendar-row:hover, .toprow:hover, .tuesday-row:hover, .weekend-special-row:hover {
+	background-color: #ffffff;
+}
+
+.calendar {
+	background: #f0eeee; 
+	font-size: 12px;
+	width: 100%;	
+	}
+
+.calendar h3 {
+	font-size: 18px; 
+	font-weight: normal;
+	margin-left: -35px;
+	}
+
+.week-calendar-header {
+	background: #59afcf; 
+	color: #ffffff;
+	}
+
+.tuesday-header {
+	background: #74c058;
+	color: #ffffff;
+	}
+
+.tuesday-header span {
+	color: #333333;
+	}
+
+.calendar-icon {
+	margin: 0 30px 0 20px; 
+	vertical-align: middle;
+	}
+
+
+.week-calendar-row td {
+	padding: 20px 15px;
+	}
+
+.toprow td {
+	padding: 12px 15px 20px 15px; 
+	border-bottom: 1px dotted #8d8d8d;
+	}
+
+.tuesday-row td, .weekend-special-row td {padding: 10px 15px;}
+.week-calendar-row, .tuesday-row, .weekend-special-row {border-bottom: 1px dotted #8d8d8d;}
+
+
+.downarrow {width: 0; height: 0; border-left: 17px solid transparent; border-right: 17px solid transparent; border-top: 17px solid #59afcf; margin: -2px auto;}
+.toprow td {padding-bottom: -10px;}
