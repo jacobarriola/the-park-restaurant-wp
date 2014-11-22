@@ -2,20 +2,20 @@
 
 <footer>
 
-	<div class="container clearfix">
+	<section class="wrapper">
 
-		<div class="grid_5 general-info">
+		<section class="general-info">
 
 			<p>1400 Sunset Blvd. Echo Park, CA 90025<br><br>
 			<span>213-482-9209</span>  |   <span><a href="mailto:info@thepark1400sunset.com">info@thepark1400sunset.com</a></span></p>
 
-			<div class="social-icons">
+			<p class="social-icons">
 				<a href="https://www.facebook.com/pages/The-Park-Restaurant/104494590265"><img src="<?php bloginfo( 'template_url' ); ?>/img/facebook.png" width="25" height="26" alt="Facebook logo" title="Become a fan of The Park Restaurant on Facebook" class="facebook-icon"></a><a href="https://twitter.com/parkrestaurant"><img src="<?php bloginfo( 'template_url' ); ?>/img/twitter.png"  width="29" height="24" alt="Twitter Logo" title="Follow The Park on Twitter"></a>
-			</div>
+			</p>
 
-		</div>
+		</section>
 
-		<div class="grid_4 biz-hours">
+		<section class="biz-hours">
 
 			<h3>Hours</h3>
 
@@ -29,9 +29,9 @@
 			<p>Brunch<br>
 			<span>Sat/Sun:  10:00 - 2:00</span></p>
 
-		</div>
+		</section>
 
-		<div class="grid_3 omega newsletter">
+		<section class="newsletter">
 
 			<h3>Newsletter</h3>
 
@@ -49,7 +49,7 @@
 			</div><!--End mc_embed_signup-->
 
 			<p class="newsletter-text">Sign up for our weekly newsletter to receive a $20 birthday gift certificate, information about weekend specials and upcoming menus, plus exclusive invitations to The Park Restaurant events.</p>
-		</div>
+		</section>
 </footer>
 
 <?php wp_footer(); ?>

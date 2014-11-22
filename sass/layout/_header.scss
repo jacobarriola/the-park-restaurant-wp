@@ -71,6 +71,7 @@
 
 .global-navigation {
 	@include clearfix;
+	margin-bottom: 2em;
 	@include pad(0 default);
 	.nav {
 		float: right;
@@ -88,14 +89,21 @@
 
 
 }*/
-.logo-holder {
+/*.logo-holder {
 	float: left;
-		@include media($small) {
-			@include span-columns(2);
-			@include shift(1);
+	display: inline-block;
+	@include span-columns(2 of 4);
+	@include shift(1 of 4);
+
+}*/
+
+.logo-container {
+	text-align: center;
+	@include media($medium-screen-up) {
+		text-align: left;
+		float: left;
 	}
 }
-
 .logo {
 	max-width: 100%;
 }

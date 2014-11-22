@@ -1,45 +1,44 @@
 <?php get_header(); ?>
+	
+<section class="wrapper">	
 
-	<div class="grid_5">
+	<section class="top-left-headline">
 
-		<div class="top-left-headline">
+		<section class="tag-line">
 
-			<div class="tag-line">
+			<p>A place to relax and get nourished</p>
 
-				<p>A place to relax and get nourished</p>
+		</section>
 
-			</div>
+		<?php query_posts("posts_per_page=1"); the_post(); ?>
 
-			<?php query_posts("posts_per_page=1"); the_post(); ?>
+		<article class="featured-bpost">
 
-			<div class="featured-bpost">
+			<p class="featured-bpost-date"><?php the_date(); ?></p>
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<p class="featured-bpost-byline">by:  <?php the_author(); ?></p>
+			<span style="featured-bpost-body"><?php the_excerpt(); ?></span>
+			<a href="<?php the_permalink(); ?>" class="featured-bpost-more">Read More &gt;&gt;</a>
 
-				<p class="featured-bpost-date"><?php the_date(); ?></p>
-				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<p class="featured-bpost-byline">by:  <?php the_author(); ?></p>
-				<span style="featured-bpost-body"><?php the_excerpt(); ?></span>
-				<a href="<?php the_permalink(); ?>" class="featured-bpost-more">Read More &gt;&gt;</a>
+		</article>
 
-			</div>
+		<?php wp_reset_query(); ?>	
 
-			<?php wp_reset_query(); ?>	
+	</section>
 
-		</div>
 
-	</div>
-
-	<div class="grid_7 omega">
+	<section class="slider">
 		<?php easyrotator_display_rotator('erc_21_1379221782'); ?>
-	</div>
+	</section>
 
 
 
 		<!--begin Secondary Navigation-->
 	
 
-			<div class="sec-nav grid_12">
+			<div class="sec-nav">
 
-				<div class="grid_8 menus">
+				<div class="menus">
 				
 					<ul>
 						<a href="http://www.thepark1400sunset.com/dinner-menu/" title="The Park Dinner Menu"><li>Dinner Menu</li></a>
@@ -49,13 +48,13 @@
 
 				</div>
 				
-				<div class="grid_1">
+<!-- 				<div class="grid_1">
 
 					&nbsp;
 
-				</div>
+				</div> -->
 
-				<div class="grid_3 book-table omega">
+				<div class="book-table omega">
 
 					<ul>
 							<li><a href="http://www.opentable.com/the-park-restaurant-reservations-los-angeles?rid=95863&restref=95863" title="Book a table at The Park using Open Table">Book a Table</a></li>
@@ -65,28 +64,19 @@
 
 			</div><!--end Secondary Navigation-->
 
-	
+			<section class="josh-quote">			
+				<section class="josh-wrapper"><img src="<?php bloginfo( 'template_url' ); ?>/img/joshcover.png" alt="Chef Josh of The Park Restaurant" title="Chef Josh" class="josh-image" /></section>
+				<blockquote class="main-quote">
+				<p>The Park is a place to relax, get nourished and hang out with your neighbors.  Our food is simple, tasty and moderately priced, and our service is friendly and professional. </p>
 
-		<div class="grid_3">
-
-			<img src="<?php bloginfo( 'template_url' ); ?>/img/joshcover.png" alt="Chef Josh of The Park Restaurant" title="Chef Josh" class="josh-image" />
-
+				<p>We have great options for vegetarians, vegans and carnivores alike.  We look forward to seeing you soon. </p>
+				<cite>- Chef Josh</cite>
+				</blockquote>
+			</section>
 		</div>
+	<!--Begin Weekly Calendar-->
 
-		<div class="grid_9 omega">
-
-			<blockquote class="main-quote">
-			<p>The Park is a place to relax, get nourished and hang out with your neighbors.  Our food is simple, tasty and moderately priced, and our service is friendly and professional. </p>
-
-			<p>We have great options for vegetarians, vegans and carnivores alike.  We look forward to seeing you soon. </p>
-			<cite>- Chef Josh</cite>
-			</blockquote>
-
-		</div>
-
-		<!--Begin Weekly Calendar-->
-
-		<div class="grid_6">
+		<section class="weekly-calendar">
 
 			<table class="week-calendar-table calendar">
 				<tbody>
@@ -135,53 +125,51 @@
 				</tbody>
 			</table>
 
-		</div><!--end Weekly Calendar-->
+		</section><!--end Weekly Calendar-->
 
-		<div class="grid_1">
-			&nbsp;
-		</div>
 
-		<div class="grid_5 omega">
 
 			<!--Begin Tuesday Calendar-->
 
-			<table class="tuesday-table calendar">
-				<tbody>
-					<tr class="tuesday-header">
-						<td><img src="<?php bloginfo( 'template_url' ); ?>/img/key.png" title="Speakeasy Tuesday" alt="speakeasy Tuesday icon" class="calendar-icon"></td>
-						<td><h3>Speakeasy Tuesday</h3></td>
-						<td><span>[</span>3 courses for $15<span>]</span></td>
-					</tr>
-
-					<tr class="tuesday-row">
-						<td class="main-calendar-column">Soup:</td>
-						<td colspan="2" class="tuesday-description"><?php the_field('soup'); ?></td>
-					</tr>
-
-					<tr class="tuesday-row">
-						<td class="main-calendar-column">Salad:</td>
-						<td colspan="2" class="tuesday-description"><?php the_field('salad'); ?></td>
-					</tr>
-
-					<tr class="tuesday-row">
-						<td class="main-calendar-column">Entree:<br>(carnivore)</td>
-						<td colspan="2" class="tuesday-description"><?php the_field('meat_entree'); ?></td>
-					</tr>
-
-					<tr class="tuesday-row">
-						<td class="main-calendar-column">Entree:<br>(veggie)</td>
-						<td colspan="2" class="tuesday-description"><?php the_field('vegetarian_entree'); ?></td>
-					</tr>
-
-					<tr class="tuesday-row">
-						<td class="main-calendar-column">Desert:</td>
-						<td colspan="2" class="tuesday-description"><?php the_field('desert'); ?></td>
-					</tr>
-				</tbody>
-			</table><!--end Tuesday Calendar-->
+			<section class="tuesday-calendar">
+				<table class="tuesday-table calendar">
+							<tbody>
+								<tr class="tuesday-header">
+									<td><img src="<?php bloginfo( 'template_url' ); ?>/img/key.png" title="Speakeasy Tuesday" alt="speakeasy Tuesday icon" class="calendar-icon"></td>
+									<td><h3>Speakeasy Tuesday</h3></td>
+									<td><span>[</span>3 courses for $15<span>]</span></td>
+								</tr>
+			
+								<tr class="tuesday-row">
+									<td class="main-calendar-column">Soup:</td>
+									<td colspan="2" class="tuesday-description"><?php the_field('soup'); ?></td>
+								</tr>
+			
+								<tr class="tuesday-row">
+									<td class="main-calendar-column">Salad:</td>
+									<td colspan="2" class="tuesday-description"><?php the_field('salad'); ?></td>
+								</tr>
+			
+								<tr class="tuesday-row">
+									<td class="main-calendar-column">Entree:<br>(carnivore)</td>
+									<td colspan="2" class="tuesday-description"><?php the_field('meat_entree'); ?></td>
+								</tr>
+			
+								<tr class="tuesday-row">
+									<td class="main-calendar-column">Entree:<br>(veggie)</td>
+									<td colspan="2" class="tuesday-description"><?php the_field('vegetarian_entree'); ?></td>
+								</tr>
+			
+								<tr class="tuesday-row">
+									<td class="main-calendar-column">Desert:</td>
+									<td colspan="2" class="tuesday-description"><?php the_field('desert'); ?></td>
+								</tr>
+							</tbody>
+						</table><!--end Tuesday Calendar--></section>
 
 			<!--Begin Weekend Calendar-->
 
+<section class="weekend-special-calendar">
 			<table class="weekend-special-table calendar">
 				<tbody>
 					<tr class="tuesday-header">
@@ -199,7 +187,10 @@
 						<td class="tuesday-description"><?php the_field('entree'); ?></td>
 					</tr>
 				</tbody>
-			</table><!--end Weekend Calendar-->	
-		</div>
+			</table><!--end Weekend Calendar-->	</section>
+</section>
+
+
+		
 <!--Begin Footer-->
 <?php get_footer(); ?>

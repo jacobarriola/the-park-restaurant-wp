@@ -8,6 +8,19 @@ $gutter: 20px;
 $grid-columns: 12;
 $max-width: em(940);
 
-// Defining breakpoints
-$medium: new-breakpoint(max-width 768px 8);
-$small: new-breakpoint(max-width 480px 4);
+// Breakpoints
+/*$sm: new-breakpoint(min-width 200px 4);
+$smbg: new-breakpoint(min-width 480px 4);
+$md: new-breakpoint(min-width 768px 6);
+$hg: new-breakpoint(min-width 940px 12);*/
+
+// Neat Breakpoints
+$small-screen: em(0);
+$sm-md-scren: em(400);
+$medium-screen: em(600);
+$large-screen: em(800);
+
+$small-screen-up: new-breakpoint(min-width $small-screen 1);
+$sm-md-screen-up: new-breakpoint(min-width $sm-md-scren 4);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 6);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);

@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 
 <nav class="global-navigation">
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-holder"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo.png" alt="The Park Restaurant of Echo Park logo" title="The Park Restaurant" class="logo" /></a>
+	<div class="logo-container"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo-holder"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo.png" alt="The Park Restaurant of Echo Park logo" title="The Park Restaurant" class="logo" /></a></div>
 	<section class="nav">
 		<?php wp_nav_menu(array('menu' => 'Main Nav Menu')); ?>
 	</section>
