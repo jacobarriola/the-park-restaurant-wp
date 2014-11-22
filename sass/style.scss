@@ -8,13 +8,13 @@ Version: 2
 */
 
 
-
+@import "normalize";
 @import "bourbon/bourbon";
-@import "grid-settings";
+@import "base/base";
 @import "neat/neat";
 
-@import "normalize";
-@import "grid";
+
+/*@import "grid";*/
 
 @import "layout/header";
 @import "layout/footer";
@@ -24,13 +24,10 @@ Version: 2
 	================================== */
 
 body {
-	font-family: 'Open Sans', sans-serif; 
-	font-style: normal; 
-	font-weight: 400; 
-	color: #333333; 
-	background: #f5f5f5 url('img/background.png') repeat; 
-	padding-top: 20px; 
-	font-size: 18px;
+
+/*	background: #f5f5f5 url('img/background.png') repeat; */
+/*	padding-top: 20px; */
+/*	font-size: 18px;*/
 }
 
 .body-text {

@@ -70,7 +70,7 @@
 				<p>The Park is a place to relax, get nourished and hang out with your neighbors.  Our food is simple, tasty and moderately priced, and our service is friendly and professional. </p>
 
 				<p>We have great options for vegetarians, vegans and carnivores alike.  We look forward to seeing you soon. </p>
-				<cite>- Chef Josh</cite>
+				<cite>Chef Josh</cite>
 				</blockquote>
 			</section>
 		</div>
