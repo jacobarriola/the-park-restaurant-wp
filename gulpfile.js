@@ -5,7 +5,19 @@ var gulp 			= require('gulp'),
 	// autoprefixer	= require('gulp-autoprefixer'),
 	minifycss		= require('gulp-minify-css'),
 	rename			= require('gulp-rename'),
+	browserSync		= require('browser-sync'),
 	notify			= require('gulp-notify');
+
+gulp.task('browser-sync', function() {
+	var files = [
+		'**/*.php'
+	];
+
+	browserSync.init(files, {
+		proxy: 'thepark:8888/'
+	});
+
+});
 
 gulp.task('sass', function() {
 		gulp.src('sass/**/*.scss')
@@ -18,15 +30,15 @@ gulp.task('sass', function() {
 			keepSpecialComments:0
 		}))
 		.pipe(gulp.dest('.'))
+		// .pipe(filter('**/*.css')) 
+		.pipe(browserSync.reload({stream:true}))
 		.pipe(notify({
 			message: "You just got super Sassy!"
 		}));
 
 });
 
-gulp.task('watch', function() {
+
+gulp.task('default', ['sass', 'browser-sync'], function () {
 	gulp.watch('sass/**/*.scss', ['sass']);
-})
-
-
-gulp.task('default', ['sass', 'watch']);
+});
