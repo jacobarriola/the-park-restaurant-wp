@@ -1,4 +1,3 @@
-
 .tag-line {
 	font-family: 'Enriqueta', sans; 
 	font-size: 34px; 
@@ -210,7 +209,6 @@
 .calendar h3 {
 	font-size: 18px; 
 	font-weight: normal;
-	margin-left: -35px;
 	}
 
 .week-calendar-header {
@@ -223,12 +221,17 @@
 	color: #ffffff;
 	}
 
-.tuesday-header span {
+.bracket {
 	color: #333333;
 	}
+.tuesday-pricing {
+	font-size: $base-font-size * .75;
+	float: right;
+}
+
 
 .calendar-icon {
-	margin: 0 30px 0 20px; 
+	margin-right: $base-spacing / 2;
 	vertical-align: middle;
 	}
 
@@ -242,9 +245,28 @@
 	border-bottom: 1px dotted #8d8d8d;
 	}
 
-.tuesday-row td, .weekend-special-row td {padding: 10px 15px;}
-.week-calendar-row, .tuesday-row, .weekend-special-row {border-bottom: 1px dotted #8d8d8d;}
+.tuesday-row td, 
+.weekend-special-row td {
+	padding: 10px 15px;
+}
 
+.week-calendar-row, 
+.tuesday-row, 
+.weekend-special-row {
+	border-bottom: 1px dotted #8d8d8d;
+}
 
-.downarrow {width: 0; height: 0; border-left: 17px solid transparent; border-right: 17px solid transparent; border-top: 17px solid #59afcf; margin: -2px auto;}
-.toprow td {padding-bottom: -10px;}
+.downarrow-wrapper {
+	padding: 0;
+}
+.downarrow {
+	width: 0; 
+	height: 0; 
+	border-left: 17px solid transparent; 
+	border-right: 17px solid transparent; 
+	border-top: 17px solid #59afcf; 
+	margin: -2px auto;
+}
+.toprow td {
+	padding-bottom: -10px;
+}

@@ -143,57 +143,6 @@ textarea {
 	================================== */
 
 
-.week-calendar-row:hover, .toprow:hover, .tuesday-row:hover, .weekend-special-row:hover {
-	background-color: #ffffff;
-}
-
-.calendar {
-	background: #f0eeee; 
-	font-size: 12px;
-	width: 100%;	
-	}
-
-.calendar h3 {
-	font-size: 18px; 
-	font-weight: normal;
-	margin-left: -35px;
-	}
-
-.week-calendar-header {
-	background: #59afcf; 
-	color: #ffffff;
-	}
-
-.tuesday-header {
-	background: #74c058;
-	color: #ffffff;
-	}
-
-.tuesday-header span {
-	color: #333333;
-	}
-
-.calendar-icon {
-	margin: 0 30px 0 20px; 
-	vertical-align: middle;
-	}
-
-
-.week-calendar-row td {
-	padding: 20px 15px;
-	}
-
-.toprow td {
-	padding: 12px 15px 20px 15px; 
-	border-bottom: 1px dotted #8d8d8d;
-	}
-
-.tuesday-row td, .weekend-special-row td {padding: 10px 15px;}
-.week-calendar-row, .tuesday-row, .weekend-special-row {border-bottom: 1px dotted #8d8d8d;}
-
-
-.downarrow {width: 0; height: 0; border-left: 17px solid transparent; border-right: 17px solid transparent; border-top: 17px solid #59afcf; margin: -2px auto;}
-.toprow td {padding-bottom: -10px;}
 
 /*  ==================================
     Contact Us Page

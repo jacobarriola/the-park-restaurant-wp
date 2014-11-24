@@ -100,7 +100,8 @@
 }*/
 
 .logo-container {
-	text-align: center;
+	@include span-columns(2 of 4);
+	@include shift(1 of 4);
 	@include media($medium-screen-up) {
 		text-align: left;
 		float: left;
@@ -108,5 +109,4 @@
 }
 .logo {
 	max-width: 100%;
-	padding: 0 $base-spacing;
 }

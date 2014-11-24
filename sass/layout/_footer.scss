@@ -1,12 +1,14 @@
 footer {
 	background: #74c058; 
-	margin-top: 107px; 
 	padding: 42px 0; 
 	color: #444444; 
 	font-size: 12px;
 	font-weight: 600;
 	.wrapper {
 		padding: 1em;
+	}
+	@include media($medium-screen-up){
+			margin-top: $base-spacing x 2; 
 	}
 }
 

@@ -3,7 +3,7 @@ var gulp 			= require('gulp'),
 	sass			= require('gulp-ruby-sass'),
 	autoprefixer	= require('gulp-autoprefixer'),
 	minifycss		= require('gulp-minify-css'),
-	rename			= require('gulp-rename'),
+	// rename			= require('gulp-rename'),
 	browserSync		= require('browser-sync'),
 	filter			= require('gulp-filter')
 	notify			= require('gulp-notify');
@@ -34,7 +34,7 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest('.'))
 		.pipe(browserSync.reload({stream:true}))
 		.pipe(notify({
-			message: "You just got super Sassy!"
+			message: "You just Sassified your files!"
 		}));
 
 });
