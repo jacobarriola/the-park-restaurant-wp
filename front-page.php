@@ -81,14 +81,15 @@
 			<table class="week-calendar-table calendar">
 				<tbody>
 					<tr class="week-calendar-header">
-						<td><img src="<?php bloginfo( 'template_url' ); ?>/img/lantern.png" title="The Weekly Rundown" alt="fork and knife icon" class="calendar-icon"></td>
-						<td>
-							<h3>The Weekly Rundown</h3>
+						<td colspan="2">
+							<h3>
+								<img src="<?php bloginfo( 'template_url' ); ?>/img/lantern.png" title="The Weekly Rundown" alt="fork and knife icon" class="calendar-icon">The Weekly Rundown
+							</h3>
 						</td>	
 					</tr>
 
 					<tr>
-						<td colspan="2">
+						<td colspan="2" class="downarrow-wrapper">
 							<div class="downarrow"></div>
 						</td>
 					</tr>
@@ -127,54 +128,56 @@
 
 		</section><!--end Weekly Calendar-->
 
+		<section class="tuesday-calendar">
+			<table class="tuesday-table calendar">
+				<tbody>
+					<tr class="tuesday-header">
+						<td colspan="2">
+							<h3>
+								<img src="<?php bloginfo( 'template_url' ); ?>/img/key.png" title="Speakeasy Tuesday" alt="speakeasy Tuesday icon" class="calendar-icon">Speakeasy Tuesday
+								<span class="tuesday-pricing"><span class="bracket">[</span>3 courses for $15<span class="bracket">]</span></span>
+							</h3>
+						</td>
 
+					</tr>
 
-			<!--Begin Tuesday Calendar-->
+					<tr class="tuesday-row">
+						<td class="main-calendar-column">Soup:</td>
+						<td class="tuesday-description"><?php the_field('soup'); ?></td>
+					</tr>
 
-			<section class="tuesday-calendar">
-				<table class="tuesday-table calendar">
-							<tbody>
-								<tr class="tuesday-header">
-									<td><img src="<?php bloginfo( 'template_url' ); ?>/img/key.png" title="Speakeasy Tuesday" alt="speakeasy Tuesday icon" class="calendar-icon"></td>
-									<td><h3>Speakeasy Tuesday</h3></td>
-									<td><span>[</span>3 courses for $15<span>]</span></td>
-								</tr>
-			
-								<tr class="tuesday-row">
-									<td class="main-calendar-column">Soup:</td>
-									<td colspan="2" class="tuesday-description"><?php the_field('soup'); ?></td>
-								</tr>
-			
-								<tr class="tuesday-row">
-									<td class="main-calendar-column">Salad:</td>
-									<td colspan="2" class="tuesday-description"><?php the_field('salad'); ?></td>
-								</tr>
-			
-								<tr class="tuesday-row">
-									<td class="main-calendar-column">Entree:<br>(carnivore)</td>
-									<td colspan="2" class="tuesday-description"><?php the_field('meat_entree'); ?></td>
-								</tr>
-			
-								<tr class="tuesday-row">
-									<td class="main-calendar-column">Entree:<br>(veggie)</td>
-									<td colspan="2" class="tuesday-description"><?php the_field('vegetarian_entree'); ?></td>
-								</tr>
-			
-								<tr class="tuesday-row">
-									<td class="main-calendar-column">Desert:</td>
-									<td colspan="2" class="tuesday-description"><?php the_field('desert'); ?></td>
-								</tr>
-							</tbody>
-						</table><!--end Tuesday Calendar--></section>
+					<tr class="tuesday-row">
+						<td class="main-calendar-column">Salad:</td>
+						<td class="tuesday-description"><?php the_field('salad'); ?></td>
+					</tr>
 
-			<!--Begin Weekend Calendar-->
+					<tr class="tuesday-row">
+						<td class="main-calendar-column">Entree:<br>(carnivore)</td>
+						<td class="tuesday-description"><?php the_field('meat_entree'); ?></td>
+					</tr>
+
+					<tr class="tuesday-row">
+						<td class="main-calendar-column">Entree:<br>(veggie)</td>
+						<td class="tuesday-description"><?php the_field('vegetarian_entree'); ?></td>
+					</tr>
+
+					<tr class="tuesday-row">
+						<td class="main-calendar-column">Desert:</td>
+						<td class="tuesday-description"><?php the_field('desert'); ?></td>
+					</tr>
+				</tbody>
+			</table>
+		</section><!--end .tuesday-calendar-->
 
 <section class="weekend-special-calendar">
 			<table class="weekend-special-table calendar">
 				<tbody>
 					<tr class="tuesday-header">
-						<td><img src="<?php bloginfo( 'template_url' ); ?>/img/cal.png" title="Weekend Special" alt="weekend special icon" class="calendar-icon"></td>
-						<td><h3>Weekend Special</h3>
+						<td colspan="2">
+							<h3>
+								<img src="<?php bloginfo( 'template_url' ); ?>/img/cal.png" title="Weekend Special" alt="weekend special icon" class="calendar-icon">Weekend Special
+							</h3>
+						</td>
 					</tr>
 
 					<tr class="weekend-special-row">
