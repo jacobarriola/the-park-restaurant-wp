@@ -14,9 +14,7 @@ gulp.task('browser-sync', function() {
 	];
 
 	browserSync.init(files, {
-		server: {
-			baseDir: "./"
-		}
+		proxy: 'thepark:8888/'
 	});
 
 });
@@ -40,9 +38,7 @@ gulp.task('sass', function() {
 
 });
 
-gulp.task('watch', function() {
+
+gulp.task('default', ['sass', 'browser-sync'], function () {
 	gulp.watch('sass/**/*.scss', ['sass']);
-})
-
-
-gulp.task('default', ['sass', 'browser-sync', 'watch']);
+});
