@@ -13,7 +13,7 @@
 				<a href="https://www.facebook.com/pages/The-Park-Restaurant/104494590265"><img src="<?php bloginfo( 'template_url' ); ?>/img/facebook.png" width="25" height="26" alt="Facebook logo" title="Become a fan of The Park Restaurant on Facebook" class="facebook-icon"></a><a href="https://twitter.com/parkrestaurant"><img src="<?php bloginfo( 'template_url' ); ?>/img/twitter.png"  width="29" height="24" alt="Twitter Logo" title="Follow The Park on Twitter"></a>
 			</p>
 
-		</section>
+		</section><!-- end .general-info -->
 
 		<section class="biz-hours">
 
@@ -29,13 +29,12 @@
 			<p>Brunch<br>
 			<span>Sat/Sun:  10:00 - 2:00</span></p>
 
-		</section>
+		</section><!-- end .biz-hours -->
 
 		<section class="newsletter">
 
 			<h3>Newsletter</h3>
 
-			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
 
 				<form action="http://thepark1400sunset.us4.list-manage.com/subscribe/post?u=efba98615d22d2979f4a24db6&amp;id=2d60dd07b7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -49,7 +48,14 @@
 			</div><!--End mc_embed_signup-->
 
 			<p class="newsletter-text">Sign up for our weekly newsletter to receive a $20 birthday gift certificate, information about weekend specials and upcoming menus, plus exclusive invitations to The Park Restaurant events.</p>
+		</section><!--end .newsletter-->
+
+	</section><!-- end .wrapper -->
+	<section class="wrapper">
+		<section class="credits">
+			<p>Website by <a href="http://jacobarriola.com">Jacob Arriola</a></p>
 		</section>
+	</section>
 </footer>
 
 <?php wp_footer(); ?>
