@@ -5,7 +5,7 @@ footer {
 	font-size: 12px;
 	font-weight: 600;
 	.wrapper {
-		padding: 1em;
+		padding: $base-spacing;
 	}
 	@include media($medium-screen-up){
 			margin-top: $base-spacing x 2; 

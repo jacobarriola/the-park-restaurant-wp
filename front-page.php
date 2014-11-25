@@ -76,9 +76,9 @@
 		</div>
 	<!--Begin Weekly Calendar-->
 
-		<section class="weekly-calendar">
+		<section class="calendar">
 
-			<table class="week-calendar-table calendar">
+			<table class="week-calendar-table">
 				<tbody>
 					<tr class="week-calendar-header">
 						<td colspan="2">
@@ -128,8 +128,8 @@
 
 		</section><!--end Weekly Calendar-->
 
-		<section class="tuesday-calendar">
-			<table class="tuesday-table calendar">
+		<section class="calendar">
+			<table class="tuesday-table">
 				<tbody>
 					<tr class="tuesday-header">
 						<td colspan="2">
@@ -169,8 +169,8 @@
 			</table>
 		</section><!--end .tuesday-calendar-->
 
-<section class="weekend-special-calendar">
-			<table class="weekend-special-table calendar">
+<section class="calendar">
+			<table class="weekend-special-table">
 				<tbody>
 					<tr class="tuesday-header">
 						<td colspan="2">
