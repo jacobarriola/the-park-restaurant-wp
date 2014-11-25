@@ -30,10 +30,6 @@
 	<section class="slider">
 		<?php easyrotator_display_rotator('erc_21_1379221782'); ?>
 	</section>
-
-
-
-		<!--begin Secondary Navigation-->
 	
 
 			<div class="sec-nav">
@@ -74,7 +70,6 @@
 				</blockquote>
 			</section>
 		</div>
-	<!--Begin Weekly Calendar-->
 
 		<section class="calendar">
 
@@ -169,7 +164,7 @@
 			</table>
 		</section><!--end .tuesday-calendar-->
 
-<section class="calendar">
+		<section class="calendar">
 			<table class="weekend-special-table">
 				<tbody>
 					<tr class="tuesday-header">
@@ -190,10 +185,7 @@
 						<td class="tuesday-description"><?php the_field('entree'); ?></td>
 					</tr>
 				</tbody>
-			</table><!--end Weekend Calendar-->	</section>
-</section>
-
-
-		
-<!--Begin Footer-->
+			</table>
+		</section><!--end .calendar-->	
+</section><!-- end .wrapper -->		
 <?php get_footer(); ?>
