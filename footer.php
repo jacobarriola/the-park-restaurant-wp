@@ -1,5 +1,3 @@
-</div><!-- /end container -->
-
 <footer>
 
 	<section class="wrapper">
