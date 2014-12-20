@@ -6,7 +6,7 @@
 
 		<section class="tag-line">
 
-			<p>A place to relax and get nourished</p>
+			<p>A place to relax and get nourished, yo!</p>
 
 		</section>
 
