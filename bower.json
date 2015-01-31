@@ -1,0 +1,20 @@
+{
+  "name": "thepark",
+  "version": "2.0",
+  "homepage": "https://github.com/jacobarriola/the-park-restaurant-wp",
+  "authors": [
+    "Homebrew Services <jacob@gethomebrew.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "slick.js": "~1.4.0"
+  }
+}
