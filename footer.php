@@ -51,7 +51,7 @@
 	</section><!-- end .wrapper -->
 	<section class="wrapper">
 		<section class="credits">
-			<p>Website by <a href="http://jacobarriola.com">Jacob Arriola</a></p>
+			<p>Website by <a href="http://gethombrew.com">Homebrew Services</a></p>
 		</section>
 	</section>
 </footer>
